@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll_diag">
+<head>
+    <meta charset="UTF-8">
+    <title>Holly.Zone</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+</head>
+<body>
+<div class="body-container">
+    <div class="vertical-grid">
+        <header id="main-header">
+            <div id="header-content">
+                <img src="../assets/images/name-bright.png">
+                <div id="header-links">
+                    <a class="header-button" href="index.html">
+                        <p>Home</p>
+                        <img src="../assets/images/bubble1.png" draggable="false">
+                    </a>
+                    <a class="header-button" href="blog-index.html">
+                        <p>Blog</p>
+                        <img src="assets/images/bubble2.png" draggable="false">
+                    </a>
+                    <div class="header-button">
+                        <p>Resume</p>
+                        <img src="../assets/images/bubble3.png" draggable="false">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="border-wrapper">
+            <div class="blog-body">
+                <h1>University Final Year Project - Development Blog</h1>
+                <section id="blog-intro">
+                    <p>Over the course of the final year in my Games Design degree, I've developed a 3D platformer game prototype.
+                        As a solo project, I've had to work in many areas like UI, Asset Development, Animation etc.
+                        However, the focus of the project from the start has been on the roles of Design and Scripting,
+                        so for my blog I'll mostly only be covering those elements.<br>
+                        I've broken things up into a few main topics, which you can skip around to from here:</p>
+                    <ol>
+                        <li><a>PSX-inspired Rendering in Unreal</a><ol>
+                            <li><a>Screen Resolution</a></li>
+                            <li><a>Gouraud Shading</a></li>
+                            <li><a>Vertex Quantization</a></li>
+                            <li><a>Vertex Colouring</a></li></ol><br>
+                        </li>
+                        <li><a>Platformer Movement Development</a></li>
+                        <li><a>Item Salvaging System & Contraption System</a></li>
+                        <li><a>End Of Project Reflection</a></li>
+                    </ol>
+                </section>
+                <section id="psx-rendering">
+                    <h2>PSX-inspired Rendering in Unreal</h2>
+                    <p>For this project, I had the specific goal of wanting to recreate a visual style inspired by early 3D games of the PS1 era. 
+                        Of particular inspiration were platformers like Spyro The Dragon or Crash Bandicoot.</p>
+                    <br>
+                    <div class="image-gallery">
+                        <img src="../assets/images/stardust-salvager/blog/spyro.png">
+                        <img src="../assets/images/stardust-salvager/blog/crash.jpg">
+                    </div>
+                    <br>
+                    <p>However, in modern game engines like Unreal or Unity, this isn’t a straightforward task. 
+                        Modern rendering pipelines have changed drastically from the ones used by games on 6th generation consoles, 
+                        meaning that certain desired visual artifacts are either not available as built-in options or require faking with post-process effects. 
+                        Unreal Engine in particular also comes with a vast array of advanced rendering features enabled by default (Temporal Anti-Aliasing, Lumen, Nanite etc.) 
+                        that are either unnecessary or would interfere with this kind of visual style.
+                        <br>
+                        After researching the rendering techniques used in these old games, 
+                        I decided on the following list of effects that I felt were core to the visual style I wanted to create:
+                    </p>
+                    <ul>
+                        <li>Lowered Screen Resolution</li>
+                        <li>Gouraud Shading</li>
+                        <li>Nearest-Neighbour Texture Filtering</li>
+                        <li>Vertex Quantization</li>
+                        <li>Dithering</li>
+                        <li>Vertex Coloring</li>
+                    </ul>
+                    <p>For this blog, I'll go over the effects that involved extra research or more complicated solutions to implement.</p>
+                    <br>
+                    
+                    
+                </section>
+                <section id="platformer-movement">
+                    <h2>Platformer Movement Development</h2>
+                </section>
+                <section id="item-systems">
+                    <h2>Item Salvaging System & Contraption System</h2>
+                </section>
+                <section id="reflection">
+                    <h2>End Of Project Reflection</h2>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
